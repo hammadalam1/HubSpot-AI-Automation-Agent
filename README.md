@@ -38,7 +38,7 @@ cd HubSpot-AI-Automation-Agent
 
 Install dependencies
 pip install -r requirements.txt
-<<<<<<< HEAD
+
 
 Run the application
 streamlit run app.py
@@ -57,22 +57,20 @@ Start chatting!
 
 🎯 Usage Examples
 Contact Operations
-text
-"Create contact for john@example.com with first name John and last name Doe"
-"Update phone number to 555-1234 for john@example.com"
-"Find contact with email john@example.com"
-"Delete contact john@example.com"
+
+Create contact for john@example.com with first name John and last name Doe
+Update phone number to 555-1234 for john@example.com
+Find contact with email john@example.com
+Delete contact john@example.com
+___________________________________________________
 Deal Operations
-text
-"Create deal for Acme Corporation with amount $50000"
-"Update deal status for Project X"
+Create deal for Acme Corporation with amount $50000
+Update deal status for Project X
+___________________________________________________
 Company Operations
-text
-"Add company Google with domain google.com"
-"Update company address for Microsoft"
-🏗️ Project Structure
-text
-=======
+Add company Google with domain google.com
+Update company address for Microsoft
+___________________________________________________
 
 2. Configuration
 Edit config/api_config.json with your API keys:
@@ -98,26 +96,12 @@ json
 
 3. #Run the Application
 python main.py
+streamlit run app.py
 
-🎯 Usage Examples
-#Create Contacts
-"Create contact for john@example.com with first name John and last name Doe"
-"Add contact sarah@company.com with first name Sarah and phone 555-123-4567"
 
-#Update Contacts
-"Update phone number to 555-987-6543 for john@example.com"
-"Change first name to Michael for sarah@company.com"
-
-#Search Contacts
-"Find contact with email john@example.com"
-"Search for sarah@company.com"
-
-#Delete Contacts
-"Delete contact john@example.com"
-"Remove sarah@company.com from CRM"
 
 #🏗️ Project Structure
->>>>>>> 4de920cb71dc90181f68a30e47365d0c4c230dcd
+
 hubspot-ai-agent/
 ├── app.py                          # 🆕 Streamlit web interface
 ├── main.py                         # CLI version
@@ -136,15 +120,7 @@ hubspot-ai-agent/
 <<<<<<< HEAD
 │   └── config_loader.py           # Configuration management
 └── README.md                      # This file
-
-🔧 Architecture
-text
-User Query (Web/CLI)
-=======
-│   └── config_loader.py         # Configuration management
-├── main.py                      # Main application
-├── requirements.txt             # Python dependencies
-└── README.md                    # This file
+__________________________________________________________________
 
 #🔧 Architecture
 User Query
@@ -185,7 +161,6 @@ Results + Email Confirmation
 🔗 API Key Sources
 OpenAI API Key
 🔗 Get it here: https://platform.openai.com/api-keys
-
 Sign up for OpenAI account
 Navigate to API Keys section
 Create new secret key
@@ -193,7 +168,6 @@ Copy the key (starts with sk-)
 
 HubSpot API Key
 🔗 Get it here: https://developers.hubspot.com
-
 Log into your HubSpot account
 Go to Settings → Integrations → Private Apps
 Create a new private app
@@ -208,23 +182,20 @@ Generate app password for "Mail"
 Use the 16-character password
 
 🐛 Troubleshooting
-<<<<<<< HEAD
 Common Issues
-"System not initialized"
+System not initialized
 Check all API keys are correctly entered
 Verify HubSpot private app has proper permissions
 =======
 #Common Issues:
-"Invalid API Key"
-
+Invalid API Key
 Verify your API keys are correctly copied
-
 Check for extra spaces in the config file
-
->>>>>>> 4de920cb71dc90181f68a30e47365d0c4c230dcd
+__________________________________________________
 "Contact not found" when updating
 Ensure the contact exists in HubSpot first
 Use search to verify contact existence
+__________________________________________________
 Email sending failures
 Use App Password, not regular password for Gmail
 Check SMTP settings match your email provider
@@ -262,10 +233,6 @@ python -c "from agents.orchestrator import GlobalOrchestrator; print('System rea
 📱 Responsive Design - Works on desktop and mobile
 
 🔄 Chat History - Complete conversation tracking
-
-🚀 Running the Application
-Web Interface (Recommended)
-streamlit run app.py
 
 
 📄 License
