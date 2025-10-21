@@ -1,0 +1,16 @@
+{
+    "OPENAI": {
+        "API_KEY": /* YOUR OPENAI API KEY HERE */,
+        "MODEL": "gpt-4o-mini"
+    },
+    "HUBSPOT": {
+        "API_KEY": /* YOUR HUBSPOT PRIVATE APP KEY HERE */, 
+        "BASE_URL": "https://api.hubapi.com"
+    },
+    "EMAIL": {
+        "SMTP_SERVER": "smtp.gmail.com",
+        "SMTP_PORT": 587,
+        "SENDER_EMAIL": /* YOUR EMAIL ADDRESS HERE */,
+        "APP_PASSWORD": /* YOUR GMAIL APP PASSWORD HERE */
+    }
+}
