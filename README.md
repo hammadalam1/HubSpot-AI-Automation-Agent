@@ -101,6 +101,7 @@ cd hubspot-ai-agent
 
 # Install dependencies
 pip install -r requirements.txt
+
 2. Configuration
 Edit config/api_config.json with your API keys:
 
@@ -121,28 +122,29 @@ json
         "password": "your-app-password"
     }
 }
-3. Run the Application
 
+
+3. #Run the Application
 python main.py
+
 🎯 Usage Examples
-Create Contacts
-text
+#Create Contacts
 "Create contact for john@example.com with first name John and last name Doe"
 "Add contact sarah@company.com with first name Sarah and phone 555-123-4567"
-Update Contacts
-text
+
+#Update Contacts
 "Update phone number to 555-987-6543 for john@example.com"
 "Change first name to Michael for sarah@company.com"
-Search Contacts
-text
+
+#Search Contacts
 "Find contact with email john@example.com"
 "Search for sarah@company.com"
-Delete Contacts
-text
+
+#Delete Contacts
 "Delete contact john@example.com"
 "Remove sarah@company.com from CRM"
-🏗️ Project Structure
-text
+
+#🏗️ Project Structure
 hubspot-ai-agent/
 ├── config/
 │   └── api_config.json          # API keys configuration
@@ -158,8 +160,8 @@ hubspot-ai-agent/
 ├── main.py                      # Main application
 ├── requirements.txt             # Python dependencies
 └── README.md                    # This file
-🔧 Architecture
-text
+
+#🔧 Architecture
 User Query
     ↓
 Global Orchestrator Agent (OpenAI)
@@ -171,7 +173,7 @@ Email Agent → Notification System
 Results + Email Confirmation
 
 🐛 Troubleshooting
-Common Issues:
+#Common Issues:
 "Invalid API Key"
 
 Verify your API keys are correctly copied
