@@ -38,6 +38,7 @@ cd HubSpot-AI-Automation-Agent
 
 Install dependencies
 pip install -r requirements.txt
+<<<<<<< HEAD
 
 Run the application
 streamlit run app.py
@@ -71,6 +72,52 @@ text
 "Update company address for Microsoft"
 🏗️ Project Structure
 text
+=======
+
+2. Configuration
+Edit config/api_config.json with your API keys:
+
+json
+{
+    "openai": {
+        "api_key": "sk-your-actual-openai-key-here",
+        "model": "gpt-4"
+    },
+    "hubspot": {
+        "api_key": "pat-your-actual-hubspot-key-here",
+        "base_url": "https://api.hubapi.com"
+    },
+    "email": {
+        "smtp_server": "smtp.gmail.com",
+        "smtp_port": 587,
+        "email": "your-email@gmail.com",
+        "password": "your-app-password"
+    }
+}
+
+
+3. #Run the Application
+python main.py
+
+🎯 Usage Examples
+#Create Contacts
+"Create contact for john@example.com with first name John and last name Doe"
+"Add contact sarah@company.com with first name Sarah and phone 555-123-4567"
+
+#Update Contacts
+"Update phone number to 555-987-6543 for john@example.com"
+"Change first name to Michael for sarah@company.com"
+
+#Search Contacts
+"Find contact with email john@example.com"
+"Search for sarah@company.com"
+
+#Delete Contacts
+"Delete contact john@example.com"
+"Remove sarah@company.com from CRM"
+
+#🏗️ Project Structure
+>>>>>>> 4de920cb71dc90181f68a30e47365d0c4c230dcd
 hubspot-ai-agent/
 ├── app.py                          # 🆕 Streamlit web interface
 ├── main.py                         # CLI version
@@ -86,12 +133,22 @@ hubspot-ai-agent/
 │   ├── hubspot_tools.py           # HubSpot API utilities
 │   └── email_tools.py             # Email sending utilities
 ├── utils/
+<<<<<<< HEAD
 │   └── config_loader.py           # Configuration management
 └── README.md                      # This file
 
 🔧 Architecture
 text
 User Query (Web/CLI)
+=======
+│   └── config_loader.py         # Configuration management
+├── main.py                      # Main application
+├── requirements.txt             # Python dependencies
+└── README.md                    # This file
+
+#🔧 Architecture
+User Query
+>>>>>>> 4de920cb71dc90181f68a30e47365d0c4c230dcd
     ↓
 Global Orchestrator Agent (OpenAI GPT-4)
     ↓
@@ -151,10 +208,20 @@ Generate app password for "Mail"
 Use the 16-character password
 
 🐛 Troubleshooting
+<<<<<<< HEAD
 Common Issues
 "System not initialized"
 Check all API keys are correctly entered
 Verify HubSpot private app has proper permissions
+=======
+#Common Issues:
+"Invalid API Key"
+
+Verify your API keys are correctly copied
+
+Check for extra spaces in the config file
+
+>>>>>>> 4de920cb71dc90181f68a30e47365d0c4c230dcd
 "Contact not found" when updating
 Ensure the contact exists in HubSpot first
 Use search to verify contact existence
@@ -217,7 +284,10 @@ Verify all API keys are correct
 Ensure you have necessary permissions in HubSpot
 
 Check your email provider's SMTP settings
+<<<<<<< HEAD
 
 ⭐ If this project helped you, please give it a star!
 
 Happy Automating! 🎉
+=======
+>>>>>>> 4de920cb71dc90181f68a30e47365d0c4c230dcd
