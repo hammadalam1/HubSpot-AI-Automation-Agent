@@ -25,22 +25,14 @@ An intelligent multi-agent system that automates HubSpot CRM operations using na
 ```
 git clone https://github.com/hammadalam1/HubSpot-AI-Automation-Agent.git
 cd HubSpot-AI-Automation-Agent
+
 Install dependencies
 <<<<<<< HEAD
 =======
-pip install -r requirements.txt
+pip install -r requirements.txtt
 
->>>>>>> d734abc8bf1ba662c944467b6aa42584b0e5384a
-
-
-pip install -r requirements.txt
 Run the application
-<<<<<<< HEAD
-
-
-=======
 python main.py
->>>>>>> d734abc8bf1ba662c944467b6aa42584b0e5384a
 streamlit run app.py
 Open your browser to http://localhost:8501
 
@@ -55,7 +47,6 @@ Click "Save Configuration"
 Start chatting!
 
 
-<<<<<<< HEAD
 🎯 Usage
 Contact Operations
 Create, update, search, and delete contacts
@@ -76,7 +67,6 @@ Update company information
 OpenAI API Key
 Link: https://platform.openai.com/api-keys
 
-=======
 #🔧 Architecture
 User Query
     ↓
@@ -115,7 +105,6 @@ Results + Email Confirmation
 🔗 API Key Sources
 OpenAI API Key
 🔗 Get it here: https://platform.openai.com/api-keys
->>>>>>> d734abc8bf1ba662c944467b6aa42584b0e5384a
 Sign up for OpenAI account
 
 Navigate to API Keys section
@@ -125,7 +114,6 @@ Create new secret key
 Copy the key (starts with sk-)
 
 HubSpot API Key
-<<<<<<< HEAD
 Link: https://developers.hubspot.com
 
 Log into HubSpot account
@@ -133,7 +121,6 @@ Log into HubSpot account
 =======
 🔗 Get it here: https://developers.hubspot.com
 Log into your HubSpot account
->>>>>>> d734abc8bf1ba662c944467b6aa42584b0e5384a
 Go to Settings → Integrations → Private Apps
 
 Create private app with CRM permissions
@@ -153,7 +140,6 @@ Use 16-character password
 
 🐛 Troubleshooting
 Common Issues
-<<<<<<< HEAD
 "System not initialized" - Check API keys and HubSpot permissions
 
 "Contact not found" - Ensure contact exists in HubSpot first
@@ -236,4 +222,3 @@ Check your email provider's SMTP settings
 Happy Automating! 🎉
 =======
 
->>>>>>> d734abc8bf1ba662c944467b6aa42584b0e5384a
