@@ -41,6 +41,7 @@ pip install -r requirements.txt
 
 
 Run the application
+python main.py
 streamlit run app.py
 Open your browser to http://localhost:8501
 
@@ -55,76 +56,9 @@ Click "Save Configuration"
 
 Start chatting!
 
-🎯 Usage Examples
-Contact Operations
-
-Create contact for john@example.com with first name John and last name Doe
-Update phone number to 555-1234 for john@example.com
-Find contact with email john@example.com
-Delete contact john@example.com
-___________________________________________________
-Deal Operations
-Create deal for Acme Corporation with amount $50000
-Update deal status for Project X
-___________________________________________________
-Company Operations
-Add company Google with domain google.com
-Update company address for Microsoft
-___________________________________________________
-
-2. Configuration
-Edit config/api_config.json with your API keys:
-
-json
-{
-    "openai": {
-        "api_key": "sk-your-actual-openai-key-here",
-        "model": "gpt-4"
-    },
-    "hubspot": {
-        "api_key": "pat-your-actual-hubspot-key-here",
-        "base_url": "https://api.hubapi.com"
-    },
-    "email": {
-        "smtp_server": "smtp.gmail.com",
-        "smtp_port": 587,
-        "email": "your-email@gmail.com",
-        "password": "your-app-password"
-    }
-}
-
-
-3. #Run the Application
-python main.py
-streamlit run app.py
-
-
-
-#🏗️ Project Structure
-
-hubspot-ai-agent/
-├── app.py                          # 🆕 Streamlit web interface
-├── main.py                         # CLI version
-├── requirements.txt                # Python dependencies
-├── config/
-│   ├── api_config_template.json    # Configuration template
-│   └── api_config.json            # Your API keys (local only)
-├── agents/
-│   ├── orchestrator.py            # Main coordinator agent
-│   ├── hubspot_agent.py           # CRM operations agent
-│   └── email_agent.py             # Email notifications agent
-├── tools/
-│   ├── hubspot_tools.py           # HubSpot API utilities
-│   └── email_tools.py             # Email sending utilities
-├── utils/
-<<<<<<< HEAD
-│   └── config_loader.py           # Configuration management
-└── README.md                      # This file
-__________________________________________________________________
 
 #🔧 Architecture
 User Query
->>>>>>> 4de920cb71dc90181f68a30e47365d0c4c230dcd
     ↓
 Global Orchestrator Agent (OpenAI GPT-4)
     ↓
@@ -251,10 +185,10 @@ Verify all API keys are correct
 Ensure you have necessary permissions in HubSpot
 
 Check your email provider's SMTP settings
-<<<<<<< HEAD
+
 
 ⭐ If this project helped you, please give it a star!
 
 Happy Automating! 🎉
 =======
->>>>>>> 4de920cb71dc90181f68a30e47365d0c4c230dcd
+
